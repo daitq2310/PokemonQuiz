@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_high_score"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorBrown50"
+    tools:context="com.example.natarian.pokemonquiz.Activity.HighScoreActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="LEADERBOARD"
+        android:textSize="45sp"
+        android:textColor="@color/colorBlack"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtHighScore"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtHighScore"
+        android:layout_above="@+id/btnHome"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:minHeight="90dp"
+        android:id="@+id/lvHighScore"
+        />
+
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button_1"
+        android:text="HOME"
+        android:textSize="30sp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/btnHome"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,746 @@
+{
+  "question": [
+    {
+      "gen": 1,
+      "name": "Bulbasaur",
+      "img": "Bulbasaur",
+      "color": "#A7DB8D",
+      "id": "#001"
+    },
+    {
+      "gen": 1,
+      "name": "Ivysaur",
+      "img": "Ivysaur",
+      "color": "#A7DB8D",
+      "id": "#002"
+    },
+    {
+      "gen": 1,
+      "name": "Venusaur",
+      "img": "Venusaur",
+      "color": "#A7DB8D",
+      "id": "#003"
+    },
+    {
+      "gen": 1,
+      "name": "Charmander",
+      "img": "Charmander",
+      "color": "#F5AC78",
+      "id": "#004"
+    },
+    {
+      "gen": 1,
+      "name": "Charmeleon",
+      "img": "Charmeleon",
+      "color": "#F5AC78",
+      "id": "#005"
+    },
+    {
+      "gen": 1,
+      "name": "Charizard",
+      "img": "Charizard",
+      "color": "#F5AC78",
+      "id": "#006"
+    },
+    {
+      "gen": 1,
+      "name": "Squirtle",
+      "img": "Squirtle",
+      "color": "#9DB7F5",
+      "id": "#007"
+    },
+    {
+      "gen": 1,
+      "name": "Wartortle",
+      "img": "Wartortle",
+      "color": "#9DB7F5",
+      "id": "#008"
+    },
+    {
+      "gen": 1,
+      "name": "Blastoise",
+      "img": "Blastoise",
+      "color": "#9DB7F5",
+      "id": "#009"
+    },
+    {
+      "gen": 1,
+      "name": "Caterpie",
+      "img": "Caterpie",
+      "color": "#C6D16E",
+      "id": "#010"
+    },
+    {
+      "gen": 1,
+      "name": "Metapod",
+      "img": "Metapod",
+      "color": "#C6D16E",
+      "id": "#011"
+    },
+    {
+      "gen": 1,
+      "name": "Butterfree",
+      "img": "Butterfree",
+      "color": "#C6D16E",
+      "id": "#012"
+    },
+    {
+      "gen": 1,
+      "name": "Weedle",
+      "img": "Weedle",
+      "color": "#C6D16E",
+      "id": "#013"
+    },
+    {
+      "gen": 1,
+      "name": "Kakuna",
+      "img": "Kakuna",
+      "color": "#C6D16E",
+      "id": "#014"
+    },
+    {
+      "gen": 1,
+      "name": "Beedrill",
+      "img": "Beedrill",
+      "color": "#C6D16E",
+      "id": "#015"
+    },
+    {
+      "gen": 1,
+      "name": "Pidgey",
+      "img": "Pidgey",
+      "color": "#C6C6A7",
+      "id": "#016"
+    },
+    {
+      "gen": 1,
+      "name": "Pidgeotto",
+      "img": "Pidgeotto",
+      "color": "#C6C6A7",
+      "id": "#017"
+    },
+    {
+      "gen": 1,
+      "name": "Pidgeot",
+      "img": "Pidgeot",
+      "color": "#C6C6A7",
+      "id": "#018"
+    },
+    {
+      "gen": 1,
+      "name": "Rattata",
+      "img": "Rattata",
+      "color": "#C6C6A7",
+      "id": "#019"
+    },
+    {
+      "gen": 1,
+      "name": "Raticate",
+      "img": "Raticate",
+      "color": "#C6C6A7",
+      "id": "#020"
+    },
+    {
+      "gen": 1,
+      "name": "Spearow",
+      "img": "Spearow",
+      "color": "#C6C6A7",
+      "id": "#021"
+    },
+    {
+      "gen": 1,
+      "name": "Fearow",
+      "img": "Fearow",
+      "color": "#C6C6A7",
+      "id": "#022"
+    },
+    {
+      "gen": 1,
+      "name": "Ekans",
+      "img": "Ekans",
+      "color": "#C183C1",
+      "id": "#023"
+    },
+    {
+      "gen": 1,
+      "name": "Arbok",
+      "img": "Arbok",
+      "color": "#C183C1",
+      "id": "#024"
+    },
+    {
+      "gen": 1,
+      "name": "Pikachu",
+      "img": "Pikachu",
+      "color": "#FAE078",
+      "id": "#025"
+    },
+    {
+      "gen": 1,
+      "name": "Raichu",
+      "img": "Raichu",
+      "color": "#FAE078",
+      "id": "#026"
+    },
+    {
+      "gen": 1,
+      "name": "Sandshrew",
+      "img": "Sandshrew",
+      "color": "#EBD69D",
+      "id": "#027"
+    },
+    {
+      "gen": 1,
+      "name": "Sandslash",
+      "img": "Sandslash",
+      "color": "#EBD69D",
+      "id": "#028"
+    },
+    {
+      "gen": 1,
+      "name": "Nidoran\u2640",
+      "img": "Nidoranfemale",
+      "color": "#C183C1",
+      "id": "#029"
+    },
+    {
+      "gen": 1,
+      "name": "Nidorina",
+      "img": "Nidorina",
+      "color": "#C183C1",
+      "id": "#030"
+    },
+    {
+      "gen": 1,
+      "name": "Nidoqueen",
+      "img": "Nidoqueen",
+      "color": "#C183C1",
+      "id": "#031"
+    },
+    {
+      "gen": 1,
+      "name": "Nidoran\u2642",
+      "img": "Nidoranmale",
+      "color": "#C183C1",
+      "id": "#032"
+    },
+    {
+      "gen": 1,
+      "name": "Nidorino",
+      "img": "Nidorino",
+      "color": "#C183C1",
+      "id": "#033"
+    },
+    {
+      "gen": 1,
+      "name": "Nidoking",
+      "img": "Nidoking",
+      "color": "#C183C1",
+      "id": "#034"
+    },
+    {
+      "gen": 1,
+      "name": "Clefairy",
+      "img": "Clefairy",
+      "color": "#F4BDC9",
+      "id": "#035"
+    },
+    {
+      "gen": 1,
+      "name": "Clefable",
+      "img": "Clefable",
+      "color": "#F4BDC9",
+      "id": "#036"
+    },
+    {
+      "gen": 1,
+      "name": "Vulpix",
+      "img": "Vulpix",
+      "color": "#F5AC78",
+      "id": "#037"
+    },
+    {
+      "gen": 1,
+      "name": "Ninetales",
+      "img": "Ninetales",
+      "color": "#F5AC78",
+      "id": "#038"
+    },
+    {
+      "gen": 1,
+      "name": "Jigglypuff",
+      "img": "Jigglypuff",
+      "color": "#C6C6A7",
+      "id": "#039"
+    },
+    {
+      "gen": 1,
+      "name": "Wigglytuff",
+      "img": "Wigglytuff",
+      "color": "#C6C6A7",
+      "id": "#040"
+    },
+    {
+      "gen": 1,
+      "name": "Zubat",
+      "img": "Zubat",
+      "color": "#C183C1",
+      "id": "#041"
+    },
+    {
+      "gen": 1,
+      "name": "Golbat",
+      "img": "Golbat",
+      "color": "#C183C1",
+      "id": "#042"
+    },
+    {
+      "gen": 1,
+      "name": "Oddish",
+      "img": "Oddish",
+      "color": "#A7DB8D",
+      "id": "#043"
+    },
+    {
+      "gen": 1,
+      "name": "Gloom",
+      "img": "Gloom",
+      "color": "#A7DB8D",
+      "id": "#044"
+    },
+    {
+      "gen": 1,
+      "name": "Vileplume",
+      "img": "Vileplume",
+      "color": "#A7DB8D",
+      "id": "#045"
+    },
+    {
+      "gen": 1,
+      "name": "Paras",
+      "img": "Paras",
+      "color": "#C6D16E",
+      "id": "#046"
+    },
+    {
+      "gen": 1,
+      "name": "Parasect",
+      "img": "Parasect",
+      "color": "#C6D16E",
+      "id": "#047"
+    },
+    {
+      "gen": 1,
+      "name": "Venonat",
+      "img": "Venonat",
+      "color": "#C6D16E",
+      "id": "#048"
+    },
+    {
+      "gen": 1,
+      "name": "Venomoth",
+      "img": "Venomoth",
+      "color": "#C6D16E",
+      "id": "#049"
+    },
+    {
+      "gen": 1,
+      "name": "Diglett",
+      "img": "Diglett",
+      "color": "#EBD69D",
+      "id": "#050"
+    },
+    {
+      "gen": 1,
+      "name": "Dugtrio",
+      "img": "Dugtrio",
+      "color": "#EBD69D",
+      "id": "#051"
+    },
+    {
+      "gen": 1,
+      "name": "Meowth",
+      "img": "Meowth",
+      "color": "#C6C6A7",
+      "id": "#052"
+    },
+    {
+      "gen": 1,
+      "name": "Persian",
+      "img": "Persian",
+      "color": "#C6C6A7",
+      "id": "#053"
+    },
+    {
+      "gen": 1,
+      "name": "Psyduck",
+      "img": "Psyduck",
+      "color": "#9DB7F5",
+      "id": "#054"
+    },
+    {
+      "gen": 1,
+      "name": "Golduck",
+      "img": "Golduck",
+      "color": "#9DB7F5",
+      "id": "#055"
+    },
+    {
+      "gen": 1,
+      "name": "Mankey",
+      "img": "Mankey",
+      "color": "#D67873",
+      "id": "#056"
+    },
+    {
+      "gen": 1,
+      "name": "Primeape",
+      "img": "Primeape",
+      "color": "#D67873",
+      "id": "#057"
+    },
+    {
+      "gen": 1,
+      "name": "Growlithe",
+      "img": "Growlithe",
+      "color": "#F5AC78",
+      "id": "#058"
+    },
+    {
+      "gen": 1,
+      "name": "Arcanine",
+      "img": "Arcanine",
+      "color": "#F5AC78",
+      "id": "#059"
+    },
+    {
+      "gen": 1,
+      "name": "Poliwag",
+      "img": "Poliwag",
+      "color": "#9DB7F5",
+      "id": "#060"
+    },
+    {
+      "gen": 1,
+      "name": "Poliwhirl",
+      "img": "Poliwhirl",
+      "color": "#9DB7F5",
+      "id": "#061"
+    },
+    {
+      "gen": 1,
+      "name": "Poliwrath",
+      "img": "Poliwrath",
+      "color": "#9DB7F5",
+      "id": "#062"
+    },
+    {
+      "gen": 1,
+      "name": "Abra",
+      "img": "Abra",
+      "color": "#FA92B2",
+      "id": "#063"
+    },
+    {
+      "gen": 1,
+      "name": "Kadabra",
+      "img": "Kadabra",
+      "color": "#FA92B2",
+      "id": "#064"
+    },
+    {
+      "gen": 1,
+      "name": "Alakazam",
+      "img": "Alakazam",
+      "color": "#FA92B2",
+      "id": "#065"
+    },
+    {
+      "gen": 1,
+      "name": "Machop",
+      "img": "Machop",
+      "color": "#D67873",
+      "id": "#066"
+    },
+    {
+      "gen": 1,
+      "name": "Machoke",
+      "img": "Machoke",
+      "color": "#D67873",
+      "id": "#067"
+    },
+    {
+      "gen": 1,
+      "name": "Machamp",
+      "img": "Machamp",
+      "color": "#D67873",
+      "id": "#068"
+    },
+    {
+      "gen": 1,
+      "name": "Bellsprout",
+      "img": "Bellsprout",
+      "color": "#A7DB8D",
+      "id": "#069"
+    },
+    {
+      "gen": 1,
+      "name": "Weepinbell",
+      "img": "Weepinbell",
+      "color": "#A7DB8D",
+      "id": "#070"
+    },
+    {
+      "gen": 1,
+      "name": "Victreebel",
+      "img": "Victreebel",
+      "color": "#A7DB8D",
+      "id": "#071"
+    },
+    {
+      "gen": 1,
+      "name": "Tentacool",
+      "img": "Tentacool",
+      "color": "#9DB7F5",
+      "id": "#072"
+    },
+    {
+      "gen": 1,
+      "name": "Tentacruel",
+      "img": "Tentacruel",
+      "color": "#9DB7F5",
+      "id": "#073"
+    },
+    {
+      "gen": 1,
+      "name": "Geodude",
+      "img": "Geodude",
+      "color": "#D1C17D",
+      "id": "#074"
+    },
+    {
+      "gen": 1,
+      "name": "Graveler",
+      "img": "Graveler",
+      "color": "#D1C17D",
+      "id": "#075"
+    },
+    {
+      "gen": 1,
+      "name": "Golem",
+      "img": "Golem",
+      "color": "#D1C17D",
+      "id": "#076"
+    },
+    {
+      "gen": 1,
+      "name": "Ponyta",
+      "img": "Ponyta",
+      "color": "#F5AC78",
+      "id": "#077"
+    },
+    {
+      "gen": 1,
+      "name": "Rapidash",
+      "img": "Rapidash",
+      "color": "#F5AC78",
+      "id": "#078"
+    },
+    {
+      "gen": 1,
+      "name": "Slowpoke",
+      "img": "Slowpoke",
+      "color": "#9DB7F5",
+      "id": "#079"
+    },
+    {
+      "gen": 1,
+      "name": "Slowbro",
+      "img": "Slowbro",
+      "color": "#9DB7F5",
+      "id": "#080"
+    },
+    {
+      "gen": 1,
+      "name": "Magnemite",
+      "img": "Magnemite",
+      "color": "#FAE078",
+      "id": "#081"
+    },
+    {
+      "gen": 1,
+      "name": "Magneton",
+      "img": "Magneton",
+      "color": "#FAE078",
+      "id": "#082"
+    },
+    {
+      "gen": 1,
+      "name": "Farfetch'd",
+      "img": "farfetchd",
+      "color": "#C6C6A7",
+      "id": "#083"
+    },
+    {
+      "gen": 1,
+      "name": "Doduo",
+      "img": "Doduo",
+      "color": "#C6C6A7",
+      "id": "#084"
+    },
+    {
+      "gen": 1,
+      "name": "Dodrio",
+      "img": "Dodrio",
+      "color": "#C6C6A7",
+      "id": "#085"
+    },
+    {
+      "gen": 1,
+      "name": "Seel",
+      "img": "Seel",
+      "color": "#9DB7F5",
+      "id": "#086"
+    },
+    {
+      "gen": 1,
+      "name": "Dewgong",
+      "img": "Dewgong",
+      "color": "#9DB7F5",
+      "id": "#087"
+    },
+    {
+      "gen": 1,
+      "name": "Grimer",
+      "img": "Grimer",
+      "color": "#C183C1",
+      "id": "#088"
+    },
+    {
+      "gen": 1,
+      "name": "Muk",
+      "img": "Muk",
+      "color": "#C183C1",
+      "id": "#089"
+    },
+    {
+      "gen": 1,
+      "name": "Shellder",
+      "img": "Shellder",
+      "color": "#9DB7F5",
+      "id": "#090"
+    },
+    {
+      "gen": 1,
+      "name": "Cloyster",
+      "img": "Cloyster",
+      "color": "#9DB7F5",
+      "id": "#091"
+    },
+    {
+      "gen": 1,
+      "name": "Gastly",
+      "img": "Gastly",
+      "color": "#A292BC",
+      "id": "#092"
+    },
+    {
+      "gen": 1,
+      "name": "Haunter",
+      "img": "Haunter",
+      "color": "#A292BC",
+      "id": "#093"
+    },
+    {
+      "gen": 1,
+      "name": "Gengar",
+      "img": "Gengar",
+      "color": "#A292BC",
+      "id": "#094"
+    },
+    {
+      "gen": 1,
+      "name": "Onix",
+      "img": "Onix",
+      "color": "#D1C17D",
+      "id": "#095"
+    },
+    {
+      "gen": 1,
+      "name": "Drowzee",
+      "img": "Drowzee",
+      "color": "#FA92B2",
+      "id": "#096"
+    },
+    {
+      "gen": 1,
+      "name": "Hypno",
+      "img": "Hypno",
+      "color": "#FA92B2",
+      "id": "#097"
+    },
+    {
+      "gen": 1,
+      "name": "Krabby",
+      "img": "Krabby",
+      "color": "#9DB7F5",
+      "id": "#098"
+    },
+    {
+      "gen": 1,
+      "name": "Kingler",
+      "img": "Kingler",
+      "color": "#9DB7F5",
+      "id": "#099"
+    },
+    {
+      "gen": 1,
+      "name": "Voltorb",
+      "img": "Voltorb",
+      "color": "#FAE078",
+      "id": "#100"
+    },
+    {
+      "gen": 1,
+      "name": "Electrode",
+      "img": "Electrode",
+      "color": "#FAE078",
+      "id": "#101"
+    },
+    {
+      "gen": 1,
+      "name": "Exeggcute",
+      "img": "Exeggcute",
+      "color": "#A7DB8D",
+      "id": "#102"
+    },
+    {
+      "gen": 1,
+      "name": "Exeggutor",
+      "img": "Exeggutor",
+      "color": "#A7DB8D",
+      "id": "#103"
+    },
+    {
+      "gen": 1,
+      "name": "Cubone",
+      "img": "Cubone",
+      "color": "#EBD69D",
+      "id": "#104"
+    },
+    {
+      "gen": 1,
+      "name": "Marowak",
+      "img": "Marowak",
+      "color": "#EBD69D",
+      "id": "#105"
+    },
+    {
+      "gen": 1,
+      "name": "Hitmonlee",
+      "img": "Hitmonlee",
+      "color": "#D67873",
+      "id": "#106"
+    }
+  ]
+}
