@@ -33,6 +33,7 @@
         android:lines="1"
         android:singleLine="true"
         android:maxLength="5"
+        android:textCursorDrawable="@drawable/custom_edit_text_cursor"
         android:hint="Enter name"
         android:gravity="center"
         android:paddingTop="5dp"
