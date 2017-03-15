@@ -8,8 +8,8 @@ import com.google.gson.annotations.SerializedName;
 
 public class Question {
 
-    @SerializedName("gen")
-    private int gen;
+    @SerializedName("bank")
+    private int bank;
     @SerializedName("name")
     private String name;
     @SerializedName("img")
@@ -18,18 +18,18 @@ public class Question {
     public Question() {
     }
 
-    public Question(int gen, String name, String imgName) {
-        this.gen = gen;
+    public Question(int bank, String name, String imgName) {
+        this.bank = bank;
         this.name = name;
         this.imgName = imgName;
     }
 
-    public int getGen() {
-        return gen;
+    public int getBank() {
+        return bank;
     }
 
-    public void setGen(int gen) {
-        this.gen = gen;
+    public void setBank(int bank) {
+        this.bank = bank;
     }
 
     public String getName() {

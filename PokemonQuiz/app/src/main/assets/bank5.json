@@ -1,742 +1,742 @@
 {
   "question": [
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Drifblim",
       "name": "Drifblim",
       "id": "#426",
       "color": "#A292BC"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Buneary",
       "name": "Buneary",
       "id": "#427",
       "color": "#C6C6A7"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Lopunny",
       "name": "Lopunny",
       "id": "#428",
       "color": "#C6C6A7"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Mismagius",
       "name": "Mismagius",
       "id": "#429",
       "color": "#A292BC"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Honchkrow",
       "name": "Honchkrow",
       "id": "#430",
       "color": "#A29288"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Glameow",
       "name": "Glameow",
       "id": "#431",
       "color": "#C6C6A7"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Purugly",
       "name": "Purugly",
       "id": "#432",
       "color": "#C6C6A7"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Chingling",
       "name": "Chingling",
       "id": "#433",
       "color": "#FA92B2"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Stunky",
       "name": "Stunky",
       "id": "#434",
       "color": "#C183C1"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Skuntank",
       "name": "Skuntank",
       "id": "#435",
       "color": "#C183C1"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Bronzor",
       "name": "Bronzor",
       "id": "#436",
       "color": "#D1D1E0"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Bronzong",
       "name": "Bronzong",
       "id": "#437",
       "color": "#D1D1E0"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Bonsly",
       "name": "Bonsly",
       "id": "#438",
       "color": "#D1C17D"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "mimejr",
       "name": "Mime Jr.",
       "id": "#439",
       "color": "#FA92B2"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Happiny",
       "name": "Happiny",
       "id": "#440",
       "color": "#C6C6A7"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Chatot",
       "name": "Chatot",
       "id": "#441",
       "color": "#C6C6A7"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Spiritomb",
       "name": "Spiritomb",
       "id": "#442",
       "color": "#A292BC"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Gible",
       "name": "Gible",
       "id": "#443",
       "color": "#A27DFA"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Gabite",
       "name": "Gabite",
       "id": "#444",
       "color": "#A27DFA"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Garchomp",
       "name": "Garchomp",
       "id": "#445",
       "color": "#A27DFA"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Munchlax",
       "name": "Munchlax",
       "id": "#446",
       "color": "#C6C6A7"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Riolu",
       "name": "Riolu",
       "id": "#447",
       "color": "#D67873"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Lucario",
       "name": "Lucario",
       "id": "#448",
       "color": "#D67873"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Hippopotas",
       "name": "Hippopotas",
       "id": "#449",
       "color": "#EBD69D"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Hippowdon",
       "name": "Hippowdon",
       "id": "#450",
       "color": "#EBD69D"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Skorupi",
       "name": "Skorupi",
       "id": "#451",
       "color": "#C183C1"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Drapion",
       "name": "Drapion",
       "id": "#452",
       "color": "#C183C1"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Croagunk",
       "name": "Croagunk",
       "id": "#453",
       "color": "#C183C1"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Toxicroak",
       "name": "Toxicroak",
       "id": "#454",
       "color": "#C183C1"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Carnivine",
       "name": "Carnivine",
       "id": "#455",
       "color": "#A7DB8D"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Finneon",
       "name": "Finneon",
       "id": "#456",
       "color": "#9DB7F5"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Lumineon",
       "name": "Lumineon",
       "id": "#457",
       "color": "#9DB7F5"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Mantyke",
       "name": "Mantyke",
       "id": "#458",
       "color": "#9DB7F5"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Snover",
       "name": "Snover",
       "id": "#459",
       "color": "#A7DB8D"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Abomasnow",
       "name": "Abomasnow",
       "id": "#460",
       "color": "#A7DB8D"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Weavile",
       "name": "Weavile",
       "id": "#461",
       "color": "#A29288"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Magnezone",
       "name": "Magnezone",
       "id": "#462",
       "color": "#FAE078"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Lickilicky",
       "name": "Lickilicky",
       "id": "#463",
       "color": "#C6C6A7"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Rhyperior",
       "name": "Rhyperior",
       "id": "#464",
       "color": "#EBD69D"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Tangrowth",
       "name": "Tangrowth",
       "id": "#465",
       "color": "#A7DB8D"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Electivire",
       "name": "Electivire",
       "id": "#466",
       "color": "#FAE078"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Magmortar",
       "name": "Magmortar",
       "id": "#467",
       "color": "#F5AC78"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Togekiss",
       "name": "Togekiss",
       "id": "#468",
       "color": "#F4BDC9"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Yanmega",
       "name": "Yanmega",
       "id": "#469",
       "color": "#C6D16E"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Leafeon",
       "name": "Leafeon",
       "id": "#470",
       "color": "#A7DB8D"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Glaceon",
       "name": "Glaceon",
       "id": "#471",
       "color": "#BCE6E6"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Gliscor",
       "name": "Gliscor",
       "id": "#472",
       "color": "#EBD69D"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Mamoswine",
       "name": "Mamoswine",
       "id": "#473",
       "color": "#BCE6E6"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "porygonz",
       "name": "Porygon-Z",
       "id": "#474",
       "color": "#C6C6A7"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Gallade",
       "name": "Gallade",
       "id": "#475",
       "color": "#FA92B2"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Probopass",
       "name": "Probopass",
       "id": "#476",
       "color": "#D1C17D"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Dusknoir",
       "name": "Dusknoir",
       "id": "#477",
       "color": "#A292BC"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Froslass",
       "name": "Froslass",
       "id": "#478",
       "color": "#BCE6E6"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Rotom",
       "name": "Rotom",
       "id": "#479",
       "color": "#FAE078"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Uxie",
       "name": "Uxie",
       "id": "#480",
       "color": "#FA92B2"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Mesprit",
       "name": "Mesprit",
       "id": "#481",
       "color": "#FA92B2"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Azelf",
       "name": "Azelf",
       "id": "#482",
       "color": "#FA92B2"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Dialga",
       "name": "Dialga",
       "id": "#483",
       "color": "#D1D1E0"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Palkia",
       "name": "Palkia",
       "id": "#484",
       "color": "#9DB7F5"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Heatran",
       "name": "Heatran",
       "id": "#485",
       "color": "#F5AC78"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Regigigas",
       "name": "Regigigas",
       "id": "#486",
       "color": "#C6C6A7"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Giratina",
       "name": "Giratina",
       "id": "#487",
       "color": "#A292BC"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Cresselia",
       "name": "Cresselia",
       "id": "#488",
       "color": "#FA92B2"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Phione",
       "name": "Phione",
       "id": "#489",
       "color": "#9DB7F5"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Manaphy",
       "name": "Manaphy",
       "id": "#490",
       "color": "#9DB7F5"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Darkrai",
       "name": "Darkrai",
       "id": "#491",
       "color": "#A29288"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Shaymin",
       "name": "Shaymin",
       "id": "#492",
       "color": "#A7DB8D"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "img": "Arceus",
       "name": "Arceus",
       "id": "#493",
       "color": "#C6C6A7"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#FA92B2",
       "id": "#494",
       "name": "Victini",
       "img": "Victini"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#A7DB8D",
       "id": "#495",
       "name": "Snivy",
       "img": "Snivy"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#A7DB8D",
       "id": "#496",
       "name": "Servine",
       "img": "Servine"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#A7DB8D",
       "id": "#497",
       "name": "Serperior",
       "img": "Serperior"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#F5AC78",
       "id": "#498",
       "name": "Tepig",
       "img": "Tepig"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#F5AC78",
       "id": "#499",
       "name": "Pignite",
       "img": "Pignite"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#F5AC78",
       "id": "#500",
       "name": "Emboar",
       "img": "Emboar"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#9DB7F5",
       "id": "#501",
       "name": "Oshawott",
       "img": "Oshawott"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#9DB7F5",
       "id": "#502",
       "name": "Dewott",
       "img": "Dewott"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#9DB7F5",
       "id": "#503",
       "name": "Samurott",
       "img": "Samurott"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#C6C6A7",
       "id": "#504",
       "name": "Patrat",
       "img": "Patrat"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#C6C6A7",
       "id": "#505",
       "name": "Watchog",
       "img": "Watchog"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#C6C6A7",
       "id": "#506",
       "name": "Lillipup",
       "img": "Lillipup"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#C6C6A7",
       "id": "#507",
       "name": "Herdier",
       "img": "Herdier"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#C6C6A7",
       "id": "#508",
       "name": "Stoutland",
       "img": "Stoutland"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#A29288",
       "id": "#509",
       "name": "Purrloin",
       "img": "Purrloin"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#A29288",
       "id": "#510",
       "name": "Liepard",
       "img": "Liepard"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#A7DB8D",
       "id": "#511",
       "name": "Pansage",
       "img": "Pansage"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#A7DB8D",
       "id": "#512",
       "name": "Simisage",
       "img": "Simisage"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#F5AC78",
       "id": "#513",
       "name": "Pansear",
       "img": "Pansear"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#F5AC78",
       "id": "#514",
       "name": "Simisear",
       "img": "Simisear"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#9DB7F5",
       "id": "#515",
       "name": "Panpour",
       "img": "Panpour"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#9DB7F5",
       "id": "#516",
       "name": "Simipour",
       "img": "Simipour"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#FA92B2",
       "id": "#517",
       "name": "Munna",
       "img": "Munna"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#FA92B2",
       "id": "#518",
       "name": "Musharna",
       "img": "Musharna"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#C6C6A7",
       "id": "#519",
       "name": "Pidove",
       "img": "Pidove"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#C6C6A7",
       "id": "#520",
       "name": "Tranquill",
       "img": "Tranquill"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#C6C6A7",
       "id": "#521",
       "name": "Unfezant",
       "img": "Unfezant"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#FAE078",
       "id": "#522",
       "name": "Blitzle",
       "img": "Blitzle"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#FAE078",
       "id": "#523",
       "name": "Zebstrika",
       "img": "Zebstrika"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#D1C17D",
       "id": "#524",
       "name": "Roggenrola",
       "img": "Roggenrola"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#D1C17D",
       "id": "#525",
       "name": "Boldore",
       "img": "Boldore"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#D1C17D",
       "id": "#526",
       "name": "Gigalith",
       "img": "Gigalith"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#FA92B2",
       "id": "#527",
       "name": "Woobat",
       "img": "Woobat"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#FA92B2",
       "id": "#528",
       "name": "Swoobat",
       "img": "Swoobat"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#EBD69D",
       "id": "#529",
       "name": "Drilbur",
       "img": "Drilbur"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#EBD69D",
       "id": "#530",
       "name": "Excadrill",
       "img": "Excadrill"
     },
     {
-      "gen": 5,
+      "bank": 5,
       "color": "#C6C6A7",
       "id": "#531",
       "name": "Audino",

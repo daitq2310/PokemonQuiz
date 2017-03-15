@@ -179,7 +179,7 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
             String jsonName = randomJSONPart();
             Gson gson = new Gson();
             questionList = gson.fromJson(loadJSONFromAsset(jsonName), QuestionList.class);
-            Log.d("Generation", jsonName + " ==== Size: " + questionList.getQuestionList().size());
+            Log.d("Bank", jsonName + " ==== Size: " + questionList.getQuestionList().size());
             for (Question q : questionList.getQuestionList()) {
                 imageNameArr.add(q.getImgName().toLowerCase().toString());
                 storageArr.add(q.getImgName().toLowerCase().toString());
@@ -223,7 +223,7 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
         int max = 7;
         int min = 1;
         int randomNumber = random.nextInt(max) + min; //[1, 7]
-        jsonPart = new String("generation" + randomNumber + ".json");
+        jsonPart = new String("bank" + randomNumber + ".json");
         return jsonPart;
     }
 
@@ -252,6 +252,13 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
 
             answer1 = question;
             multipleChoiceArr.remove(answer1);
+
+            for (int i = 0; i < multipleChoiceArr.size(); i++) {
+                String duplicate = multipleChoiceArr.get(i).toString();
+                if (duplicate.equals(answer1)) {
+                    multipleChoiceArr.remove(duplicate);
+                }
+            }
 
             int randomIndex1 = rd.nextInt(multipleChoiceArr.size());
             answer2 = pokemonNameArr.get(randomIndex1).toString();
