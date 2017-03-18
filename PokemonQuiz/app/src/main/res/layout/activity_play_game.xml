@@ -90,15 +90,35 @@
             android:id="@+id/imvPokeDex"
             />
 
-        <ImageButton
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/imvPokeDex"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/custom_button_6"
-            android:id="@+id/btnHelp"
-            />
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_button_6"
+                android:src="@drawable/help"
+                android:id="@+id/btnHelp"
+                />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/custom_text_view"
+                android:id="@+id/txtHelp"
+                />
+
+        </LinearLayout>
 
     </RelativeLayout>
 
@@ -116,7 +136,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="35dp"
+        android:layout_marginBottom="15dp"
         android:layout_above="@+id/linearAnswer"
         android:text="CORRECT"
         android:textSize="20sp"
@@ -125,6 +145,7 @@
         android:gravity="center"
         android:id="@+id/txtResult"
         />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -44,6 +44,14 @@ public class HighScoreActivity extends Activity implements View.OnClickListener 
         adapter.swap(list);
     }
 
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Intent openMainActivity= new Intent(this, StartScreenActivity.class);
+        openMainActivity.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivity(openMainActivity);
+    }
+
     public void init() {
         btnHome = (Button) findViewById(R.id.btnHome);
 

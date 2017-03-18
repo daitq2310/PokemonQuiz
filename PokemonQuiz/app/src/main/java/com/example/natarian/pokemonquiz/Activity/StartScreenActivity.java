@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.support.v7.app.AlertDialog;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -20,9 +21,9 @@ import com.example.natarian.pokemonquiz.R;
 
 public class StartScreenActivity extends Activity implements View.OnClickListener {
 
-    TextView txtQuiz;
     Button btnPlay, btnHighScore, btnExit;
     EditText edtName;
+    MediaPlayer mpOpening = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +34,20 @@ public class StartScreenActivity extends Activity implements View.OnClickListene
     }
 
     public void init() {
-//        txtQuiz = (TextView) findViewById(R.id.txtQuiz);
         btnPlay = (Button) findViewById(R.id.btnPlay);
         btnHighScore = (Button) findViewById(R.id.btnHighScore);
         btnExit = (Button) findViewById(R.id.btnExit);
 
         edtName = (EditText) findViewById(R.id.edtName);
+
+        mpOpening = MediaPlayer.create(this, R.raw.opening);
+
+        if (mpOpening.isPlaying()) {
+            mpOpening.stop();
+        }
+
+        mpOpening.start();
+        mpOpening.setLooping(true);
 
         btnPlay.setOnClickListener(this);
         btnHighScore.setOnClickListener(this);
@@ -59,11 +68,13 @@ public class StartScreenActivity extends Activity implements View.OnClickListene
                     Intent intent = new Intent(getApplicationContext(), PlayGameActivity.class);
                     intent.putExtra("name", name);
                     startActivity(intent);
+                    mpOpening.stop();
                 }
                 break;
             case R.id.btnHighScore:
                 Intent intent1 = new Intent(getApplicationContext(), HighScoreActivity.class);
                 startActivity(intent1);
+                mpOpening.stop();
                 break;
             case R.id.btnExit:
                 exitApp();
@@ -71,6 +82,27 @@ public class StartScreenActivity extends Activity implements View.OnClickListene
         }
 
 
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        mpOpening.stop();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mpOpening.start();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Intent openMainActivity= new Intent(this, StartScreenActivity.class);
+        openMainActivity.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivity(openMainActivity);
+        mpOpening.start();
     }
 
     @Override
@@ -96,6 +128,7 @@ public class StartScreenActivity extends Activity implements View.OnClickListene
         btnYesDialog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mpOpening.stop();
                 moveTaskToBack(true);
                 android.os.Process.killProcess(android.os.Process.myPid());
                 System.exit(1);

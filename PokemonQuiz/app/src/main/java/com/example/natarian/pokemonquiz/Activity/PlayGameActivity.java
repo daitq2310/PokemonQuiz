@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Handler;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
@@ -35,6 +36,7 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
     //Constant
     private final static int LIFE = 3;
     private final static int SCORE = 0;
+    private final static int HELP = 10;
     private final static int QUESTION_FINISH_DELAY = 1500;
     private final static int COLOR_GREEN_800 = Color.rgb(46, 125, 50);
     private final static int COLOR_RED_800 = Color.rgb(198, 40, 40);
@@ -42,7 +44,7 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
     private final static int COLOR_BLACK_ALPHA_255 = Color.argb(255, 0, 0, 0);
     private final static int COLOR_BLACK_ALPHA_0 = Color.argb(0, 0, 0, 0);
 
-    TextView txtScore, txtLife, txtResult;
+    TextView txtScore, txtLife, txtResult, txtHelp;
     Button btnAnswerA, btnAnswerB, btnAnswerC, btnAnswerD;
     ImageButton btnHelp;
     ImageView imvQuiz;
@@ -56,10 +58,17 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
     private ArrayList<String> answerArr;
     private int rdContent;
     private boolean isCorrect = false;
+    private boolean needHelp = false;
     private String question;
+    private String finalAnswer;
     private int life;
     private int score;
+    private int help;
     private String name;
+
+    MediaPlayer mpCorrect = null;
+    MediaPlayer mpIncorrect = null;
+    MediaPlayer mpHelp = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,13 +77,13 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         init();
         parseJson();
-//        showCountDownTimer();
     }
 
     public void init() {
         txtScore = (TextView) findViewById(R.id.txtScore);
         txtLife = (TextView) findViewById(R.id.txtLife);
         txtResult = (TextView) findViewById(R.id.txtResult);
+        txtHelp = (TextView) findViewById(R.id.txtHelp);
 
         showDefaultResult();
 
@@ -84,6 +93,10 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
         btnAnswerD = (Button) findViewById(R.id.btnAnswerD);
         btnHelp = (ImageButton) findViewById(R.id.btnHelp);
 
+        mpCorrect = MediaPlayer.create(this, R.raw.correct);
+        mpIncorrect = MediaPlayer.create(this, R.raw.incorrect);
+        mpHelp = MediaPlayer.create(this, R.raw.help);
+
         imvQuiz = (ImageView) findViewById(R.id.imvQuiz);
         imvQuiz.setColorFilter(COLOR_BLACK_ALPHA_255);
         random = new Random();
@@ -92,8 +105,11 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
 
         life = LIFE;
         score = SCORE;
+        help = HELP;
+
         txtScore.setText("" + score);
         txtLife.setText("" + life);
+        txtHelp.setText("" + help);
 
         btnAnswerA.setOnClickListener(this);
         btnAnswerB.setOnClickListener(this);
@@ -110,6 +126,7 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
                 case R.id.btnAnswerA:
                     runButtonAnimation(btnAnswerA);
                     checkAnswer(btnAnswerA, btnAnswerB, btnAnswerC, btnAnswerD);
+                    playAnswerSound();
                     showPokemon();
                     showResult();
                     final Handler handlerA = new Handler();
@@ -124,6 +141,7 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
                 case R.id.btnAnswerB:
                     runButtonAnimation(btnAnswerB);
                     checkAnswer(btnAnswerB, btnAnswerA, btnAnswerC, btnAnswerD);
+                    playAnswerSound();
                     showPokemon();
                     showResult();
                     final Handler handlerB = new Handler();
@@ -138,6 +156,7 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
                 case R.id.btnAnswerC:
                     runButtonAnimation(btnAnswerC);
                     checkAnswer(btnAnswerC, btnAnswerA, btnAnswerB, btnAnswerD);
+                    playAnswerSound();
                     showPokemon();
                     showResult();
                     final Handler handlerC = new Handler();
@@ -152,6 +171,7 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
                 case R.id.btnAnswerD:
                     runButtonAnimation(btnAnswerD);
                     checkAnswer(btnAnswerD, btnAnswerA, btnAnswerB, btnAnswerC);
+                    playAnswerSound();
                     showPokemon();
                     showResult();
                     final Handler handler = new Handler();
@@ -164,7 +184,8 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
 
                     break;
                 case R.id.btnHelp:
-
+                    useHelp();
+                    playHelpSound();
                     break;
                 default:
             }
@@ -257,7 +278,9 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
             question = imageNameArr.get(rdContent).toLowerCase().toString();
             String answer1, answer2, answer3, answer4;
 
-            answer1 = question;
+
+            finalAnswer = pokemonNameArr.get(multipleChoiceArr.indexOf(question)).toString();
+            answer1 = finalAnswer;
             multipleChoiceArr.remove(answer1);
 
             for (int i = 0; i < multipleChoiceArr.size(); i++) {
@@ -318,6 +341,65 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
     }
 
 
+
+
+    //============================================================
+    //Set Question
+    public void useHelp() {
+        try {
+            String answerA = btnAnswerA.getText().toString();
+            String answerB = btnAnswerB.getText().toString();
+            String answerC = btnAnswerC.getText().toString();
+            String answerD = btnAnswerD.getText().toString();
+
+            if (answerA.equals(finalAnswer)) {
+                removeAnswer(btnAnswerB, btnAnswerC, btnAnswerD);
+            } else if (answerB.equals(finalAnswer)) {
+                removeAnswer(btnAnswerA, btnAnswerC, btnAnswerD);
+            } else if (answerC.equals(finalAnswer)) {
+                removeAnswer(btnAnswerA, btnAnswerB, btnAnswerD);
+            } else if (answerD.equals(finalAnswer)) {
+                removeAnswer(btnAnswerA, btnAnswerB, btnAnswerC);
+            }
+
+            btnHelp.setEnabled(false);
+            btnHelp.setBackgroundResource(R.drawable.custom_button_6_disable);
+
+            if (help > 0) {
+                help--;
+                txtHelp.setText("" + help);
+            } else {
+                help = 0;
+                txtHelp.setText("" + help);
+            }
+
+        } catch (Exception e) {
+
+        }
+    }
+
+    public void removeAnswer(Button btnIncorrectAnswer1, Button btnIncorrectAnswer2, Button btnIncorrectAnswer3) {
+        ArrayList<Button> buttonArr = new ArrayList<>();
+
+        buttonArr.add(btnIncorrectAnswer1);
+        buttonArr.add(btnIncorrectAnswer2);
+        buttonArr.add(btnIncorrectAnswer3);
+
+        Random rd = new Random();
+        int btnIndex = rd.nextInt(buttonArr.size());
+        buttonArr.remove(btnIndex);
+
+        for (int i = 0; i < buttonArr.size(); i++) {
+            buttonArr.get(i).setText("");
+            buttonArr.get(i).setEnabled(false);
+        }
+
+        needHelp = true;
+    }
+
+
+
+
     //============================================================
     //Answer Screen
     public void showResult() {
@@ -357,22 +439,41 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
             String otherButtonTitle2 = otherButton2.getText().toString();
             String otherButtonTitle3 = otherButton3.getText().toString();
 
-            if (chosenButtonTitle.equalsIgnoreCase(question)) {
+            if (chosenButtonTitle.equalsIgnoreCase(finalAnswer)) {
                 isCorrect = true;
                 chosenButton.setBackgroundResource(R.drawable.custom_button_4_correct);
             } else {
                 isCorrect = false;
                 chosenButton.setBackgroundResource(R.drawable.custom_button_4_incorrect);
-                if (otherButtonTitle1.equalsIgnoreCase(question)) {
+                if (otherButtonTitle1.equalsIgnoreCase(finalAnswer)) {
                     otherButton1.setBackgroundResource(R.drawable.custom_button_4_correct);
-                } else if (otherButtonTitle2.equalsIgnoreCase(question)) {
+                } else if (otherButtonTitle2.equalsIgnoreCase(finalAnswer)) {
                     otherButton2.setBackgroundResource(R.drawable.custom_button_4_correct);
-                } else if (otherButtonTitle3.equalsIgnoreCase(question)) {
+                } else if (otherButtonTitle3.equalsIgnoreCase(finalAnswer)) {
                     otherButton3.setBackgroundResource(R.drawable.custom_button_4_correct);
                 }
             }
         } catch (Exception e) {
             isCorrect = false;
+        }
+    }
+
+    public void playAnswerSound() {
+        if (mpCorrect.isPlaying() || mpIncorrect.isPlaying()) {
+            mpCorrect.stop();
+            mpIncorrect.stop();
+        }
+
+        if (isCorrect == true) {
+            mpCorrect.start();
+        } else {
+            mpIncorrect.start();
+        }
+    }
+
+    public void playHelpSound() {
+        if (needHelp == true) {
+            mpHelp.start();
         }
     }
 
@@ -435,6 +536,17 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
 
     public void setDefaultQuestion() {
         imvQuiz.setColorFilter(COLOR_BLACK_ALPHA_255);
+
+        if (help > 0) {
+            btnHelp.setEnabled(true);
+            btnHelp.setBackgroundResource(R.drawable.custom_button_6);
+            needHelp = false;
+        }
+
+        btnAnswerA.setEnabled(true);
+        btnAnswerB.setEnabled(true);
+        btnAnswerC.setEnabled(true);
+        btnAnswerD.setEnabled(true);
 
         btnAnswerA.setBackgroundResource(R.drawable.custom_button_4);
         btnAnswerB.setBackgroundResource(R.drawable.custom_button_4);

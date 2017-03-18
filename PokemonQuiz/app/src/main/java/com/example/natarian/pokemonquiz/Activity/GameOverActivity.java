@@ -3,6 +3,7 @@ package com.example.natarian.pokemonquiz.Activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -37,6 +38,7 @@ public class GameOverActivity extends Activity implements View.OnClickListener {
 
     private List<Score> list;
     private DBContext dbContext;
+    MediaPlayer mpGameOver = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +55,14 @@ public class GameOverActivity extends Activity implements View.OnClickListener {
         adapter.swap(list);
     }
 
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Intent openMainActivity= new Intent(this, StartScreenActivity.class);
+        openMainActivity.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivity(openMainActivity);
+    }
+
     public void init() {
         txtGameOver = (TextView) findViewById(R.id.txtGameOver);
         txtPlayer = (TextView) findViewById(R.id.txtPlayer);
@@ -63,6 +73,14 @@ public class GameOverActivity extends Activity implements View.OnClickListener {
         btnAgain = (ImageButton) findViewById(R.id.btnAgain);
         btnFinish = (ImageButton) findViewById(R.id.btnFinish);
         btnHighScore = (ImageButton) findViewById(R.id.btnHighScore);
+
+        mpGameOver = MediaPlayer.create(this, R.raw.gameover);
+
+        if (mpGameOver.isPlaying()) {
+            mpGameOver.stop();
+        }
+
+        mpGameOver.start();
 
         Typeface type1 = Typeface.createFromAsset(getAssets(),"GoodDog.otf");
         txtGameOver.setTypeface(type1);
@@ -96,11 +114,13 @@ public class GameOverActivity extends Activity implements View.OnClickListener {
             case R.id.btnHighScore:
                 Intent intent = new Intent(getApplicationContext(), HighScoreActivity.class);
                 startActivity(intent);
+                mpGameOver.stop();
                 break;
             case R.id.btnAgain:
                 Intent intent1 = new Intent(getApplicationContext(), PlayGameActivity.class);
                 intent1.putExtra("name", name);
                 startActivity(intent1);
+                mpGameOver.stop();
                 break;
             case R.id.btnFinish:
                 backToStartScreen();
@@ -151,6 +171,7 @@ public class GameOverActivity extends Activity implements View.OnClickListener {
     public void backToStartScreen() {
         Intent intent2 = new Intent(getApplicationContext(), StartScreenActivity.class);
         startActivity(intent2);
+        mpGameOver.stop();
     }
 
 

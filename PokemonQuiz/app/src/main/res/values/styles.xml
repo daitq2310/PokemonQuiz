@@ -8,14 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-        <style name="Theme.Transparent" parent="android:Theme.Dialog">
-            <item name="android:windowIsTranslucent">true</item>
-            <item name="android:windowBackground">@drawable/custom_view</item>
-            <item name="android:windowContentOverlay">@null</item>
-            <item name="android:windowNoTitle">true</item>
-            <item name="android:windowIsFloating">true</item>
-            <item name="android:backgroundDimEnabled">true</item>
-        </style>
+    <style name="Theme.Transparent" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@drawable/custom_view</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
 
     <style name="cust_dialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowNoTitle">true</item>
