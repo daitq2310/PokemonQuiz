@@ -524,6 +524,7 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
         btnAnswerB.setEnabled(status);
         btnAnswerC.setEnabled(status);
         btnAnswerD.setEnabled(status);
+        btnHelp.setEnabled(status);
     }
 
 
