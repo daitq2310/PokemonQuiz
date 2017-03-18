@@ -62,15 +62,14 @@
             />
 
         <Button
+            android:id="@+id/btnHighScore"
             android:layout_width="250dp"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/custom_button_2"
             android:text="LEADERBOARD"
-            android:textSize="30sp"
             android:textColor="@color/colorWhite"
-            android:id="@+id/btnHighScore"
-            />
+            android:textSize="30sp" />
 
         <Button
             android:layout_width="250dp"

@@ -15,6 +15,7 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -43,6 +44,7 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
 
     TextView txtScore, txtLife, txtResult;
     Button btnAnswerA, btnAnswerB, btnAnswerC, btnAnswerD;
+    ImageButton btnHelp;
     ImageView imvQuiz;
 
     private QuestionList questionList;
@@ -80,6 +82,7 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
         btnAnswerB = (Button) findViewById(R.id.btnAnswerB);
         btnAnswerC = (Button) findViewById(R.id.btnAnswerC);
         btnAnswerD = (Button) findViewById(R.id.btnAnswerD);
+        btnHelp = (ImageButton) findViewById(R.id.btnHelp);
 
         imvQuiz = (ImageView) findViewById(R.id.imvQuiz);
         imvQuiz.setColorFilter(COLOR_BLACK_ALPHA_255);
@@ -96,6 +99,7 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
         btnAnswerB.setOnClickListener(this);
         btnAnswerC.setOnClickListener(this);
         btnAnswerD.setOnClickListener(this);
+        btnHelp.setOnClickListener(this);
     }
 
     @Override
@@ -157,6 +161,9 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
                             setQuestion();
                         }
                     }, QUESTION_FINISH_DELAY);
+
+                    break;
+                case R.id.btnHelp:
 
                     break;
                 default:

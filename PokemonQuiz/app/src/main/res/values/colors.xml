@@ -23,6 +23,7 @@
     <color name="colorTeal500">#009688</color>
     <color name="colorTeal800">#00695C</color>
 
+    <color name="colorRed500">#F44336</color>
     <color name="colorRed800">#C62828</color>
 
     <color name="colorGreen700">#388E3C</color>

@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorBrown50"
     tools:context="com.example.natarian.pokemonquiz.Activity.PlayGameActivity">
 
 
@@ -74,11 +75,40 @@
 
     </LinearLayout>
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearInfo"
+        android:id="@+id/relaPokeDex">
+
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="323dp"
+            android:background="@drawable/poke_dex"
+            android:id="@+id/imvPokeDex"
+            />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/imvPokeDex"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_button_6"
+            android:id="@+id/btnHelp"
+            />
+
+    </RelativeLayout>
+
+
+
     <ImageView
-        android:layout_width="220dp"
-        android:layout_height="220dp"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
         android:layout_below="@id/linearInfo"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="35dp"
         android:layout_centerHorizontal="true"
         android:id="@+id/imvQuiz"
         />
@@ -86,7 +116,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="45dp"
+        android:layout_marginBottom="35dp"
         android:layout_above="@+id/linearAnswer"
         android:text="CORRECT"
         android:textSize="20sp"
