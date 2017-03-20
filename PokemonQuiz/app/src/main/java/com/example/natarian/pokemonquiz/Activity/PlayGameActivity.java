@@ -34,6 +34,8 @@ import java.util.Random;
 public class PlayGameActivity extends Activity implements View.OnClickListener {
 
     //Constant
+    private final static int JSON_BANK_PART_MAX = 3;
+    private final static int JSON_BANK_PART_MIN = 1;
     private final static int LIFE = 3;
     private final static int SCORE = 0;
     private final static int HELP = 10;
@@ -248,9 +250,9 @@ public class PlayGameActivity extends Activity implements View.OnClickListener {
 
     public String randomJSONPart() {
         String jsonPart;
-        int max = 7;
-        int min = 1;
-        int randomNumber = random.nextInt(max) + min; //[1, 7]
+        int max = JSON_BANK_PART_MAX;
+        int min = JSON_BANK_PART_MIN;
+        int randomNumber = random.nextInt(max) + min; //[min, max]
         jsonPart = new String("bank" + randomNumber + ".json");
         return jsonPart;
     }
