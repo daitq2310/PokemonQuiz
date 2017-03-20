@@ -2,9 +2,12 @@ package com.example.natarian.pokemonquiz.Activity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Point;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.view.Display;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
@@ -182,8 +185,15 @@ public class GameOverActivity extends Activity implements View.OnClickListener {
         setFinishOnTouchOutside(false);
 
         WindowManager.LayoutParams params = getWindow().getAttributes();
-        params.height = POPUP_HEIGHT;
-        params.width = POPUP_WIDTH;
+
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        WindowManager windowmanager = (WindowManager) getApplicationContext().getSystemService(this.WINDOW_SERVICE);
+        windowmanager.getDefaultDisplay().getMetrics(displayMetrics);
+        int width = displayMetrics.widthPixels;
+        int height = displayMetrics.heightPixels;
+
+        params.height = (int) (height/1.65);
+        params.width = width - 150;
 
         this.getWindow().setAttributes(params);
     }
