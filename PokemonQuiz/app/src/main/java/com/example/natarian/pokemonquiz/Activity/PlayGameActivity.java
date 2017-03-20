@@ -2,13 +2,11 @@ package com.example.natarian.pokemonquiz.Activity;
 
 import android.app.Activity;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Handler;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -19,13 +17,11 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.example.natarian.pokemonquiz.CustomAnimation;
 import com.example.natarian.pokemonquiz.Question;
 import com.example.natarian.pokemonquiz.QuestionList;
 import com.example.natarian.pokemonquiz.R;
 import com.google.gson.Gson;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
