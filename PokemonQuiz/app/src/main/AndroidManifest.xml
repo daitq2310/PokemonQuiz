@@ -28,7 +28,6 @@
             android:name=".Activity.GameOverActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Transparent" />
-        <activity android:name=".Popup.ExtitAppActivity"></activity>
     </application>
 
 </manifest>

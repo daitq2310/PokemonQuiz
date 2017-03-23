@@ -2,9 +2,11 @@ package com.example.natarian.pokemonquiz.Activity;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
@@ -130,6 +132,7 @@ public class StartScreenActivity extends Activity implements View.OnClickListene
                 System.exit(1);
             }
         });
+
 
         btnNoDialog.setOnClickListener(new View.OnClickListener() {
             @Override
